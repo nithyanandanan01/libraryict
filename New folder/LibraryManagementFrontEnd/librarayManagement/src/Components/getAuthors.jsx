@@ -11,7 +11,7 @@ const Authors = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get('https://localhost:7064/api/Shoes');
+                const response = await axios.get('https://localhost:7064/api/Books');
                 setBooks(response.data);
             } catch (err) {
                 setError('Error fetching data');
